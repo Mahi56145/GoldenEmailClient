@@ -1,0 +1,132 @@
+/* 1. Global Background */
+.root {
+    -fx-background-color: #0f172a; /* Deep Navy */
+}
+
+/* 2. Login Card */
+#login-card {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 15;
+    -fx-border-color: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -fx-border-width: 2;
+    -fx-border-radius: 13;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 20, 0, 0, 10);
+}
+
+/* 3. Dashboard Card */
+#dashboard-card {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 215, 0, 0.3);
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 20, 0, 0, 10);
+    -fx-min-width: 500;
+    -fx-min-height: 400;
+    -fx-max-width: 600;
+    -fx-max-height: 500;
+    -fx-padding: 50;
+    -fx-alignment: center;
+}
+
+/* 4. Text Inputs */
+.text-field, .password-field {
+    -fx-background-color: #334155;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+/* 5. Gold Buttons */
+.gold-button {
+    -fx-background-color: linear-gradient(to bottom, #fcf6ba 0%, #bf953f 50%, #b38728 51%, #fbf5b7 100%);
+    -fx-text-fill: #3e2723;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-padding: 10 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 215, 0, 0.4), 15, 0, 0, 0);
+}
+.gold-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* 6. Red Button (Logout) */
+.red-button {
+    -fx-background-color: linear-gradient(to bottom, #ff7f7f 0%, #ff0000 50%, #c00000 51%, #ff4c4c 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-padding: 12 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.4), 15, 0, 0, 0);
+}
+.red-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* 7. New UI Elements */
+.welcome-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.version-label {
+    -fx-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-font-size: 10px;
+    -fx-font-family: "Segoe UI";
+}
+
+.check-box .text {
+    -fx-fill: #cbd5e1;
+    -fx-font-size: 12px;
+}
+.check-box .box {
+    -fx-background-color: #334155;
+    -fx-border-color: #64748b;
+    -fx-border-radius: 3;
+}
+.check-box:selected .mark {
+    -fx-background-color: #fcf6ba;
+}
+/* --- GOLD TEXT LABELS --- */
+.gold-label {
+    -fx-text-fill: #ffd700; /* Bright Gold Color */
+    -fx-font-weight: bold;
+    -fx-font-size: 16px; /* Slightly larger for readability */
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 1); /* Tiny shadow for pop */
+}
+/* --- EMAIL PAPER (The Container) --- */
+.email-paper {
+    -fx-background-color: #ffffff; /* Keep Paper WHITE even in Dark Mode */
+    -fx-border-color: #ffd700; /* Bright Gold Border */
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 215, 0, 0.2), 15, 0, 0, 0);
+    -fx-padding: 10;
+}
+
+.file-container {
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-background-color: #222;
+}
+/* --- LOGIN TITLE (Clean White) --- */
+.login-title {
+    -fx-text-fill: #ffffff; /* Pure, Crisp White */
+
+    -fx-font-size: 24px;
+    -fx-font-weight: 900;
+
+    /* Subtle black shadow to lift it off the dark background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 2);
+}

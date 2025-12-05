@@ -1,0 +1,129 @@
+/* --- LIGHT THEME (Royal Cream & Gold) --- */
+
+/* 1. Global Background: Warm Cream */
+.root {
+    -fx-background-color: #fdfbf7;
+}
+
+/* 2. Cards */
+#login-card, #dashboard-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-border-color: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -fx-border-width: 2;
+    -fx-border-radius: 18;
+    -fx-effect: dropshadow(three-pass-box, rgba(184, 134, 11, 0.2), 20, 0, 0, 10);
+    -fx-min-width: 350;
+    -fx-padding: 40;
+    -fx-alignment: center;
+}
+
+#dashboard-card {
+    -fx-min-width: 500;
+    -fx-min-height: 400;
+    -fx-max-width: 600;
+    -fx-max-height: 500;
+}
+
+/* 3. Inputs */
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #3e2723;
+    -fx-prompt-text-fill: #a0a0a0;
+    -fx-border-color: #d4af37;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #b8860b;
+    -fx-background-color: #fffef8;
+}
+
+/* 4. Labels */
+.label, .welcome-label {
+    -fx-text-fill: #3e2723;
+    -fx-font-family: "Segoe UI";
+}
+.welcome-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+.version-label {
+    -fx-text-fill: rgba(62, 39, 35, 0.4);
+    -fx-font-size: 10px;
+}
+
+/* 5. Gold Buttons (FIXED HOVER) */
+.gold-button {
+    -fx-background-color: linear-gradient(to bottom, #fcf6ba 0%, #bf953f 50%, #b38728 51%, #fbf5b7 100%);
+    -fx-text-fill: #3e2723;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-padding: 10 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(184, 134, 11, 0.3), 10, 0, 0, 2);
+}
+.gold-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 0.9; /* Make it slightly transparent to show interaction */
+    -fx-effect: dropshadow(three-pass-box, rgba(184, 134, 11, 0.6), 15, 0, 0, 2); /* Stronger glow */
+}
+
+/* 6. Red Button */
+.red-button {
+    -fx-background-color: linear-gradient(to bottom, #ff7f7f 0%, #ff0000 50%, #c00000 51%, #ff4c4c 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-padding: 12 30;
+}
+.red-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 0.9;
+}
+
+/* 7. Misc */
+.check-box .text { -fx-fill: #3e2723; }
+.check-box .box { -fx-background-color: #fff; -fx-border-color: #d4af37; }
+.check-box:selected .mark { -fx-background-color: #b8860b; }
+
+.gold-label {
+    -fx-text-fill: #b8860b;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Fix for Web View & ScrollPane Backgrounds */
+.scroll-pane, .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+/* --- EMAIL PAPER (The Container) --- */
+.email-paper {
+    -fx-background-color: #ffffff; /* Always White Paper */
+    -fx-border-color: #d4af37; /* Gold Border */
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+    -fx-padding: 10;
+}
+
+.file-container {
+    -fx-border-color: #d4af37;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-background-color: #fffef8;
+}
+/* --- LOGIN TITLE (Specific Style) --- */
+.login-title {
+    -fx-text-fill: #2d3436; /* Dark Slate/Black */
+    -fx-font-size: 24px;
+    -fx-font-weight: 900;
+    /* No glow needed for light mode */
+}
