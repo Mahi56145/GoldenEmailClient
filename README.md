@@ -35,7 +35,7 @@ Golden Email Client is a professional-grade desktop email software that enables 
 ---
 
 ## 📁 Project Structure
-
+```
 src/
 └── main/
 ├── java/
@@ -50,6 +50,7 @@ src/
 
 pom.xml
 README.md
+```
 
 ---
 
