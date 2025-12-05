@@ -83,6 +83,7 @@ Run in project root:
 
 ```bash
 mvn clean package
+```
 
 This will generate the JAR at:
 
@@ -90,8 +91,9 @@ target/GoldenEmailClient-1.0.0.jar
 (Version may vary based on pom.xml)
 
 ▶️ Run Application
-
+```bash
 java -jar target/GoldenEmailClient-1.0.0.jar
+```
 
 ## OUTPUT
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/4a31a5c5-0912-41bb-b5e4-b884316e5d8d" /><img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/cd95f009-05c0-4beb-bde1-c10ab9023ab9" />
